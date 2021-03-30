@@ -70,13 +70,13 @@ function App() {
               </Route>
             ))}
             {backOfficeRoutes.map(({ path, Component }) => (
-              <ProtectedAdminRoute path={path} component={Component} isAdmin={false} />
+              <ProtectedAdminRoute path={path} component={Component} isAdmin={false} /> // Se deberá actualizar isAdmin una vez se implemente el estado funcional
             ))}
             {adminRoutes.map(({ path, Component }) => (
-              <ProtectedAdminRoute path={path} component={Component} isAdmin={false} />
+              <ProtectedAdminRoute path={path} component={Component} isAdmin={false} /> // Se deberá actualizar isAdmin una vez se implemente el estado funcional
             ))}
             {userRoutes.map(({ path, Component }) => (
-              <ProtectedUserRoute path={path} component={Component} isAuth={false} />
+              <ProtectedUserRoute path={path} component={Component} isAuth={false} /> // Se deberá actualizar isAuth una vez se implemente el estado funcional
             ))}
           </AnimatePresence>
         </Switch>
